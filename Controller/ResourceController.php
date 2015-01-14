@@ -49,7 +49,7 @@ class ResourceController extends BaseController
             ->setData(array(
                 'form' => $form->createView(),
                 'data' => $resource,
-                'admin' => $this->getAdmin()->createView()
+                'view' => $this->getAdmin()->createView()
             ))
         ;
 

@@ -2,7 +2,7 @@
 
 <div class="container form-container small-dialog ">
     {% block content %}
-        <form method="POST" action="{{ path(admin.config.getParameter('manage_route'), { name: data.name }) }}">
+        <form method="POST" action="{{ path(view.getParameter('manage_route'), { name: data.name }) }}">
             <div class="pl2em mb2em">
                 {{ form_widget(form) }}
             </div>
